@@ -73,7 +73,7 @@ async def on_message(message):
         update_encourage(new)
         await message.channel.send(f'new "{new}" encouragement is added!')
 
-    # to list encouragements 
+    # to list encouragements
     if msg.startswith('!listEnco'):
         encouragements = []
         if 'encouragements' in db.keys():
@@ -92,7 +92,7 @@ async def on_message(message):
         index = int(msg.split('!deleteEnco ',1)[1])
         index = index - 1
         delete_encouragement(index)
-        await message.channel.send('Encouragements is deleted')
+        await message.channel.send('Encouragement is deleted')
 
     # if msg starts with '!newSad' means user want to add new sad word
     if msg.startswith('!newSad'):
@@ -113,17 +113,17 @@ async def on_message(message):
 
         # if len(db['sadwords']) == 0:
         #   await message.channel.send('The list is empty please add new sad words')
-        
+
 
     # to delete sadwords
     if msg.startswith('!deleteSad'):
-      sadowrds = []
-      if 'sadwords' in db.keys():
-        sadwords = db['sadwords']
-        index = int(msg.split('!deleteSad ',1)[1])
-        index = index - 1
-        delete_sadword(index)
-        await message.channel.send('sadowrd is deleted')
+        sadwords = []
+        if 'sadwords' in db.keys():
+            sadwords = db['sadwords']
+            index = int(msg.split('!deleteSad ',1)[1])
+            index = index - 1
+            delete_sadword(index)
+            await message.channel.send('sadwords is deleted')
 
 my_secret = os.environ['TOKEN']
 client.run(my_secret)

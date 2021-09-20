@@ -1,4 +1,5 @@
-# I hvae created basic discord bot with async and await features of python, this bot can detect sad words in a message and immediately send encouragement message into that channel. other than this you can add you own sad words and encouragements messages and can delete the existance ones too.
+# I hvae created basic discord bot with async and await features of python, this bot can detect sad words in a message and immediately send encouragement message into that channel. other than this, you can add your own sad words and encouragements messages and can delete the existance ones too.
+# here is the invite link of this bot: https://is.gd/tVWYRJ
 
 # to list sad words send command !listSad
 # to list encouragements !listEnco
